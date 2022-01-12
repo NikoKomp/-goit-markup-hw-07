@@ -1,0 +1,38 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 80px;
+}
+.logo__image {
+  color: var(--button-color);
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo__image-part2 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+.footer__logo-image {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--button-color);
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.footer__logo-im-part {
+  color: var(--sup-head-color);
+}

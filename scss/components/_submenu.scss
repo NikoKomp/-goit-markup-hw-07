@@ -1,0 +1,31 @@
+.submenu {
+  display: flex;
+  margin-right: 331px;
+  margin-left: 93px;
+}
+.submenu :last-child {
+  padding-right: 0;
+}
+.submenu__bar {
+  display: block;
+  padding-right: 50px;
+}
+.submenu__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.submenu__link:hover,
+.submenu__link :focus {
+  color: var(--button-color);
+}
