@@ -33,14 +33,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.modal__button :hover {
+& :hover {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--button-color);
 }
-
+}
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -71,17 +70,6 @@ label {
 input {
   outline: none;
 }
-.name__icon {
-  padding: 8px;
-  font-family: inherit;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding-left: 42px;
-}
-.name__icon:focus {
-  border: 1px solid var(--button-color);
-}
 .modal__text {
   font-weight: normal;
   font-size: 12px;
@@ -106,18 +94,15 @@ input {
   font-size: 12px;
   line-height: 14px;
   padding: 12px 16px;
-}
-.input-text::placeholder {
+&::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-textarea {
-  outline: none;
-}
-.input-text:focus {
+&:focus {
   transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: 1px solid var(--button-color);
+}
 }
 .modal__conditions-text {
   display: flex;
@@ -209,21 +194,35 @@ textarea {
   top: 55%;
   left: 15px;
 }
-.name__icon:focus ~ .label__icon {
+.name__icon {
+  padding: 8px;
+  font-family: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 42px;
+&:focus {
+  border: 1px solid var(--button-color);
+}
+&:focus ~ .label__icon {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--button-color);
 }
-.name__icon:focus ~ .label__icon-tel {
+&:focus ~ .label__icon-tel {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--button-color);
 }
-.name__icon:focus ~ .label__icon-mail {
+&:focus ~ .label__icon-mail {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--button-color);
+}
+}
+textarea {
+  outline: none;
 }

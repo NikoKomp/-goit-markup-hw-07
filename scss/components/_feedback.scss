@@ -6,15 +6,16 @@
   fill: currentColor;
   margin-right: 10px;
   vertical-align: middle;
-}
-.feedback__icon1 :hover {
-  fill: var(--button-color);
+  &:hover {
+    fill: var(--button-color);
+  }
 }
 .feedback__contacts {
   margin-right: 50px;
   display: flex;
   align-items: center;
-}
-.feedback__contacts:last-child {
-  margin: 0;
+
+  &:last-child {
+    margin: 0;
+  }
 }

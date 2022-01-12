@@ -5,9 +5,10 @@
 }
 .advantage__list {
   margin-right: 30px;
-}
-.advantage__list:last-child {
-  margin-right: 0px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 .advantage__picture {
   display: flex;

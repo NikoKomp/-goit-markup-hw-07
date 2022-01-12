@@ -15,10 +15,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
-}
-.addres_map-link:hover,
-.addres_map-link:focus {
-  color: var(--button-color);
+
+  &:hover,
+  &:focus {
+    color: var(--button-color);
+  }
 }
 
 .addres__contacts {
@@ -32,8 +33,9 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
-}
-.addres__contacts:hover,
-.addres__contacts :focus {
-  color: var(--button-color);
+
+  &:hover,
+  &:focus {
+    color: var(--button-color);
+  }
 }
