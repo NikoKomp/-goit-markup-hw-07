@@ -23,13 +23,14 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
   &:last-child {
     margin-right: 0px;
   }
 }
 .team__photo {
-  width: 270px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .team__name {
   padding-bottom: 10px;
@@ -40,9 +41,7 @@
   color: var(--text-primary);
 }
 .team__text {
-  margin-top: 30px;
-  padding-right: 32px;
-  padding-left: 32px;
+  margin: 30px 32px 30px 32px;
 }
 .team__post {
   text-align: center;
@@ -87,4 +86,9 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
+}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
