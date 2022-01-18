@@ -2,10 +2,6 @@
   display: flex;
   margin-right: 331px;
   margin-left: 93px;
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
 }
 .submenu :last-child {
   padding-right: 0;

@@ -10,18 +10,10 @@
   font-weight: bold;
   text-align: center;
   padding-bottom: 50px;
-
-  @media screen and (max-width: 767px) {
-    display: table;
-  }
 }
 .team__list {
   display: flex;
   justify-content: center;
-
-  @media screen and (max-width: 767px) {
-    display: table;
-  }
 }
 
 .team__card {
@@ -35,6 +27,7 @@
     margin-right: 0px;
   }
 }
+
 .team__photo {
   display: block;
   max-width: 100%;

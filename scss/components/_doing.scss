@@ -4,19 +4,10 @@
   line-height: 1.16;
   font-weight: bold;
   padding-bottom: 50px;
-
-  @media screen and (max-width: 767px) {
-    display: none;
-
-  }
 }
 .doing__list {
   display: flex;
   justify-content: center;
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
 }
 .doing__table {
   padding: auto;

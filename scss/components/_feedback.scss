@@ -1,10 +1,6 @@
 .feedback {
   display: flex;
   align-items: center;
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
 }
 .feedback__icon1 {
   fill: currentColor;
