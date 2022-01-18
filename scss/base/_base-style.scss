@@ -4,7 +4,30 @@
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  .container.adaptive {
+    max-width: 320px;
+  }
+  
+  @media screen and (min-width: 480px) {
+    .container.adaptive {
+      max-width: 480px;
+    }
+  }
+  
+  @media screen and (min-width: 767px) {
+    .container.adaptive {
+      max-width: 767px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .container.adaptive {
+      max-width: 1200px;
+    }
+  }
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
