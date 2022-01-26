@@ -2,7 +2,10 @@
   margin-left: auto;
 }
 .mailing-form__subscribe {
-  display: flex;
+  display: table;
+  @media screen and (min-width: 767px) {
+    display: flex;
+  }
 }
 .mailing {
   flex-direction: row;

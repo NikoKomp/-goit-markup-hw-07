@@ -27,6 +27,24 @@ a {
   margin-right: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -58,6 +76,10 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .mobile__button {
@@ -65,10 +87,15 @@ body {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin: auto;
   border: none;
   background-color: transparent;
   padding: 12px 8px;
+}
+
+@media screen and (min-width: 767px) {
+  .mobile__button {
+    display: none;
+  }
 }
 
 .burger-btn {
@@ -140,6 +167,12 @@ body {
   margin-left: 93px;
 }
 
+@media screen and (max-width: 767px) {
+  .submenu {
+    display: none;
+  }
+}
+
 .submenu :last-child {
   padding-right: 0;
 }
@@ -203,6 +236,12 @@ body {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .feedback {
+    display: none;
+  }
+}
+
 .feedback__icon1 {
   fill: currentColor;
   margin-right: 10px;
@@ -263,8 +302,14 @@ body {
   white-space: pre;
   color: var(--sup-head-color);
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
+}
+
+@media screen and (min-width: 767px) {
+  .slogan__title {
+    font-size: 44px;
+  }
 }
 
 .slogan__button {
@@ -282,11 +327,11 @@ body {
 }
 
 .slogan {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/fon.jpg);
-  background-image: -webkit-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/fon.jpg);
-  background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/fon.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/fon.jpg);
-  max-width: 1600px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero-mob.jpg);
+  background-image: -webkit-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-mob.jpg);
+  background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-mob.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-mob.jpg);
+  max-width: 480px;
   background-repeat: no-repeat;
   background-position: center;
   margin: auto;
@@ -297,21 +342,45 @@ body {
   padding-bottom: 200px;
 }
 
+@media screen and (min-width: 767px) {
+  .slogan {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/fon.jpg);
+    background-image: -webkit-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/fon.jpg);
+    background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/fon.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/fon.jpg);
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    -webkit-background-size: cover;
+            background-size: cover;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .advantage-section {
   padding-top: 94px;
   padding-bottom: 0px;
 }
 
 .advantage {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: table;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: auto;
+}
+
+@media screen and (min-width: 767px) {
+  .advantage {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .advantage__list {
@@ -407,6 +476,12 @@ body {
   width: 370px;
 }
 
+@media screen and (max-width: 767px) {
+  .doing-section {
+    display: none;
+  }
+}
+
 .our-team {
   background-color: var(--secondar-button-color);
 }
@@ -424,14 +499,20 @@ body {
 }
 
 .team__list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: table;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (min-width: 767px) {
+  .team__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .team__card {
@@ -561,14 +642,20 @@ body {
 }
 
 .client__list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: table;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 767px) {
+  .client__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .clients__item {
@@ -643,14 +730,24 @@ body {
 }
 
 .footer__box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  display: table;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 767px) {
+  .footer__box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer-social__join {
@@ -755,10 +852,16 @@ body {
 }
 
 .mailing-form__subscribe {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: table;
+}
+
+@media screen and (min-width: 767px) {
+  .mailing-form__subscribe {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .mailing {

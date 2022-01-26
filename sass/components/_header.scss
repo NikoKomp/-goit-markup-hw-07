@@ -7,13 +7,17 @@
   display: flex;
   align-content: flex-start;
   align-items: center;
+  justify-content: space-between;
 }
 .mobile__button {
   display: inline-flex;
-  margin: auto;
   border: none;
   background-color: transparent;
   padding: 12px 8px;
+
+  @media screen and(min-width: 767px) {
+    display: none;
+  }
 }
 .burger-btn {
   background-color: unset;

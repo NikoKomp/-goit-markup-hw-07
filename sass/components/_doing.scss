@@ -39,3 +39,8 @@
 .doing_img-doing {
   width: 370px;
 }
+.doing-section {
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
+}
