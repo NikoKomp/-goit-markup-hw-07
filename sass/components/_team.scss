@@ -73,6 +73,7 @@
   fill: white;
 }
 .social {
+  display: flex;
   margin-top: 16px;
   padding-bottom: 25px;
   justify-content: space-between;
@@ -83,6 +84,8 @@
     display: flex;
     margin-top: 16px;
     justify-content: space-between;
+    align-items: center;
+    padding: 0;
   }
 }
 .social__icon {
