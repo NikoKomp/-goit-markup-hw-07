@@ -5,6 +5,10 @@
   @media screen and(max-width: 767px) {
     display: none;
   }
+  @media screen and(min-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .feedback__icon1 {
   fill: currentColor;
@@ -15,12 +19,13 @@
   }
 }
 .feedback__contacts {
-  margin-right: 50px;
   display: flex;
   align-items: center;
-
-  &:last-child {
-    margin: 0;
+  @media screen and(min-width: 1200px) {
+    margin-right: 50px;
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 .feedback__link {
@@ -39,5 +44,10 @@
   &:hover,
   &:focus {
     color: var(--button-color);
+  }
+  @media screen and(min-width: 767px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
   }
 }

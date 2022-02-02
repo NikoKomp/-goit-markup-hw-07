@@ -10,7 +10,12 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: inherit;
     justify-content: space-between;
