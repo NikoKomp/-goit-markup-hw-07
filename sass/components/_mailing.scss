@@ -1,5 +1,14 @@
 .mailing-form {
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+
+  @media screen and (min-width: 767px) {
+    margin-left: auto;
+    margin-top: 0;
+    align-items: flex-start;
+  }
 }
 .mailing-form__subscribe {
   display: table;
@@ -28,14 +37,29 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: inherit;
-  width: 358px;
+  width: 450px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  @media screen and (min-width: 767px) {
+    cursor: pointer;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: inherit;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
 }
 .mailing__button {
-  cursor: pointer;
   width: 200px;
   height: 50px;
   background: var(--button-color);
@@ -44,10 +68,25 @@
   line-height: 1.87;
   color: var(--sup-head-color);
   border-radius: 4px;
-  margin-left: 12px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 767px) {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background: var(--button-color);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--sup-head-color);
+    border-radius: 4px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .mailing__button-icon {
   margin-left: 10px;

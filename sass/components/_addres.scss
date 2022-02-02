@@ -1,5 +1,13 @@
 .box1 {
-  margin-right: 70px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 767px) {
+    margin-right: 70px;
+    text-align: start;
+    margin-bottom: 0px;
+  }
 }
 .addres {
   font-style: normal;
