@@ -52,7 +52,7 @@
                     </a>
                 </li>
             </ul>
-            <button type="button" class="mobile__button">
+            <button type="button" data-modal-open class="mobile__button">
                 <svg width="24" height="16" aria-label="Переключатель мобильного меню">
                     <use href="image/svg/menus.svg#icon-menu_24px" ></use>
                 </svg>
@@ -61,15 +61,19 @@
     </header>
 
 
+
+
     <main>
         <!-- slogan -->
         <section class="slogan">
             <div class="container hero">
             <h1 class="slogan__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ 
 ДЛЯ ВАШЕГО БИЗНЕСА </h1>
-            <button  type="button" data-modal-open class="slogan__button" >Заказать услугу</button>
+            <button  type="button" mobile-menu-is-open class="slogan__button" >Заказать услугу</button>
             </div>
         </section>
+
+
 
 
 
