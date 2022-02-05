@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="css/main.min.css" type="text/css">
 </head>
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <div class="container navigation-list">
             <nav class="logo">
                 <a href="" class="logo__image" target="blink">Web<span class="logo__image-part2">Studio</span>
@@ -60,21 +60,21 @@
             </button>
         
     </header>
-     <main>
+     <main> -->
         <!-- slogan -->
-    <!--      <section class="slogan">
+       <!--   <section class="slogan">
             <div class="container hero">
             <h1 class="slogan__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ 
 ДЛЯ ВАШЕГО БИЗНЕСА </h1>
             <button  type="button" data-modal-open class="slogan__button" >Заказать услугу</button>
             </div>
-        </section>
-  -->
+        </section> -->
+  
 
 
 
  <!-- Our advantage -->
-    <!--  <section class="section advantage-section">
+     <!--  <section class="section advantage-section">
         <div class="container">
         <h2 hidden>Наши преимущества</h2>
             <ul class="advantage">
@@ -90,7 +90,7 @@
                 </li>
                 <li class="advantage__list">
                     <div class="advantage__picture">
-                        <svg>
+                        <svg >
                         <use href="image/symbol-defs.svg#icon-clock-1"> </use>
                         </svg>
                     </div>
@@ -117,7 +117,7 @@
                 </li>
             </ul>
         </div>
-        </section> --> 
+        </section>  -->
  
 
 
@@ -151,12 +151,35 @@
 
 
 <!-- our teeam-->
- <!--        <section class="section our-team-section" >
+         <section class="section our-team-section" >
             <div class="container">
             <h2 class="team"> Наша команда</h2>
             <ul class="team__list">
                 <li class="team__card">
-                    <img src="image/photo1.jpg"  class="team__photo" alt="Игорь Демяненко">
+                    <!-- <picture>
+                        <source
+                        srcset="./image/team1-mob-1x.jpg 1x, 
+                                ./image/team1-mob-2x.jpg 2x"
+                        media="(min-width 480px)"
+                        />
+                        <source 
+                        srcset="./image/team1-tab-1x.jpg 1x, 
+                                ./image/team1-tab-2x.jpg 2x" 
+                        media="(min-width 768px)" 
+                        />
+                        <source srcset="./image/team1-desk-1x.jpg 1x, 
+                                ./image/team1-desk-2x.jpg 2x" 
+                                media="(min-width 1200px)" 
+                        /> -->
+                        <img  srcset="./image/team1-mob-1x.jpg 1x, 
+                                ./image/team1-mob-2x.jpg 2x"
+                                 srcset="./image/team1-tab-1x.jpg 1x, 
+                                ./image/team1-tab-2x.jpg 2x"
+                                 srcset="./image/team1-desk-1x.jpg 1x, 
+                                ./image/team1-desk-2x.jpg 2x"
+                        src="./image/photo1.jpg" class="team__photo" alt="Игорь Демяненко">
+                   <!--  </picture> -->
+                   
                     <div class="team__text">
                     <h3 class="team__name">Игорь Демяненко</h3>
                     <p class="team__post">Product Designer</p>
@@ -193,7 +216,16 @@
                     </div>
                 </li>
                 <li class="team__card">
-                    <img src="image/photo2.jpg" class="team__photo"  alt="Ольга Репина">
+                    <img 
+                    srcset="./image/team2-mob-1x.jpg 1x, 
+                                ./image/team2-mob-2x.jpg 2x"
+                                 srcset="./image/team2-tab-1x.jpg 1x, 
+                                ./image/team2-tab-2x.jpg 2x"
+                                 srcset="./image/team2-desk-1x.jpg 1x, 
+                                ./image/team2-desk-2x.jpg 2x"
+                                src="image/photo2.jpg" 
+                                class="team__photo"  
+                                alt="Ольга Репина">
                     <div class="team__text">
                     <h3 class="team__name">Ольга Репина</h3>
                     <p class="team__post">Frontend Developer</p>
@@ -305,7 +337,7 @@
                 </li>
             </ul>
             </div>
-        </section>  -->
+        </section>  
 
       <!--our clients-->
 <!--        <section class="section our-clients">

@@ -1,7 +1,24 @@
+.button-section {
+  padding-top: 60px;
+}
+
+.portfolio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
 .portfolio-buttons__butn {
   display: inline-block;
   margin-right: 8px;
   border-radius: 4px;
+  margin-bottom: 15px;
 }
 .portfolio-buttons__button-second {
   padding: 6px 22px;
@@ -27,8 +44,4 @@
     color: var(--sup-head-color);
     background-color: var(--button-color);
   }
-}
-.portfolio-buttons {
-  display: flex;
-  justify-content: center;
 }
