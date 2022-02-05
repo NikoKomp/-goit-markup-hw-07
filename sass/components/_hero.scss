@@ -2,6 +2,7 @@
   margin-bottom: 30px;
   white-space: pre;
   color: var(--sup-head-color);
+
   font-weight: 900;
   font-size: 26px;
   line-height: 1.36;
@@ -21,7 +22,6 @@
   line-height: 1.87;
   color: var(--sup-head-color);
   border-radius: 4px;
-
   position: relative;
 }
 .slogan {
@@ -51,7 +51,7 @@
     padding-top: 200px;
     padding-bottom: 200px;
   }
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)

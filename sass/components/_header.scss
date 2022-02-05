@@ -6,6 +6,10 @@
   align-content: flex-start;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and(min-width: 768px) {
+    justify-content: center;
+  }
 }
 .mobile__button {
   display: inline-flex;
