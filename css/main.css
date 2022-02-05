@@ -825,7 +825,7 @@ body {
   font-size: 36px;
   line-height: 1.16;
   font-weight: bold;
-  padding-bottom: 50px;
+  padding-bottom: 15px;
 }
 
 .client__list {
@@ -840,22 +840,6 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media screen and (min-width: 768px) {
-  .client__list {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -907,54 +891,17 @@ body {
           transition-delay: 0;
 }
 
-@media screen and (min-width: 767px) {
-  .client__list .clients__item {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #afb1b8;
-    width: 170px;
-    height: 92px;
-    border: 1px solid;
-    -webkit-border-radius: 4px;
-            border-radius: 4px;
-    background: #ffffff1a;
-    -webkit-transition-property: border;
-    -o-transition-property: border;
-    transition-property: border;
-    -webkit-transition-duration: 250ms;
-         -o-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-         -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transition-delay: 0;
-         -o-transition-delay: 0;
-            transition-delay: 0;
-  }
-}
-
 .client__list .clients__card-border {
   width: -webkit-calc((100% - 2 * 30px) / 2);
   width: calc((100% - 2 * 30px) / 2);
   margin: 15px;
-}
-
-.client__list .clients__card-border:nth-child(2n + 2) {
-  margin-right: 0;
-}
-
-.client__list .clients__card-border:nth-last-child(-n + 2) {
-  margin-bottom: 0;
+  /* 
+    &:nth-child(2n + 2) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    } */
 }
 
 .client__list .clients__card-border :hover,

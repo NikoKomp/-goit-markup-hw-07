@@ -3,18 +3,13 @@
   font-size: 36px;
   line-height: 1.16;
   font-weight: bold;
-  padding-bottom: 50px;
+  padding-bottom: 15px;
 }
 .client__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: inherit;
@@ -34,34 +29,17 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
-
-    @media screen and (min-width: 767px) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #afb1b8;
-      width: 170px;
-      height: 92px;
-      border: 1px solid;
-      border-radius: 4px;
-      background: #ffffff1a;
-
-      transition-property: border;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-delay: 0;
-    }
   }
   .clients__card-border {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
-
+    /* 
     &:nth-child(2n + 2) {
       margin-right: 0;
     }
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
-    }
+    } */
   }
   .clients__card-border :hover,
   .clients__card-border :focus {
