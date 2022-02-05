@@ -1,15 +1,10 @@
 .footer {
   background-color: var(--brand-color);
-  margin-left: auto;
-  margin-right: auto;
+  background-attachment: fixed;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .footer__box {
-  display: table;
-  align-items: center;
-  justify-content: center;
-
   @media screen and (min-width: 767px) {
     display: flex;
   }
