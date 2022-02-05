@@ -993,7 +993,7 @@ body {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   .footer__box {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1057,6 +1057,19 @@ body {
           transition-delay: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .tablet {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .box1 {
   text-align: center;
   -webkit-box-pack: center;
@@ -1066,11 +1079,18 @@ body {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   .box1 {
     margin-right: 70px;
     text-align: start;
     margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .box1 {
+    margin-right: 165px;
+    margin-bottom: 25px;
   }
 }
 
@@ -1136,22 +1156,17 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 35px;
   text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   .mailing-form {
-    margin-left: auto;
+    margin-left: 93px;
     margin-top: 0;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    text-align: start;
   }
 }
 
@@ -1165,9 +1180,17 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   .mailing-form__subscribe {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1207,7 +1230,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
   background-color: inherit;
   width: 100%;
-  max-width: 480px;
+  max-width: 450px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1218,25 +1241,10 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   .mailing-form__e-mail-window {
-    cursor: pointer;
-    padding-left: 16px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    background-color: inherit;
     width: 358px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    -webkit-border-radius: 4px;
-            border-radius: 4px;
+    margin-bottom: 0;
   }
 }
 
@@ -1250,7 +1258,6 @@ body {
   color: var(--sup-head-color);
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  margin: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1265,31 +1272,9 @@ body {
           justify-content: center;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   .mailing__button {
-    cursor: pointer;
-    width: 200px;
-    height: 50px;
-    background: var(--button-color);
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.87;
-    color: var(--sup-head-color);
-    -webkit-border-radius: 4px;
-            border-radius: 4px;
     margin-left: 12px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
