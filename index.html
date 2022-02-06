@@ -63,11 +63,13 @@
 
 
 
-            <div class="mobile is-hidden data-menu">
-                <div class="container">
+            <div class="backdrop is-hidden" data-menu>
+               <div class="mobile">
+                <div class="container-mobile">
+                    <div class="mob__menu__top">
                 <button type="button" class="mobile__button-close" data-menu-close>
                 <svg width="19" height="19" >
-                    <use href="image/svg/menus.svg#icon-lastfm2"></use>
+                    <use href="image/symbol-defs-close.svg#icon-close_24px"></use>
                 </svg>
                 </button>
                 <ul class="mobile__submenu">
@@ -80,14 +82,17 @@
                             class="mobile__submenu__link">Портфолио
                         </a>
                     </li>
-                    <li class="mobile__submenu__bar"><a href="/Контакты" class="mobile__submenu__link">Контакты</a></li>
+                     <li class="mobile__submenu__bar"><a href="/Контакты" class="mobile__submenu__link">Контакты</a></li>
                 </ul>
+                </div>
+                <div class="mob__menu__bottom">
                 <ul class="mobile-feedback">
                 <li class="mobile__feedback__contacts">
                     <a href="tel:+380961111111" class="mobile__feedback__phone">
                            +380961111111
                     </a>
                 </li>
+              
                 <li class="mobile__feedback__contacts">
                     <a href="mailto:https://info@devstudio.com" class="mobile__feedback__link" title="info@devstudio.com">
                 
@@ -111,18 +116,20 @@
 
                     </li>
                 </ul>
+                </div>
             </div>
         </div>
+        </div>
     </header>
-     <main> -
+     <main> 
         <!-- slogan -->
-       <!--   <section class="slogan">
+         <section class="slogan">
             <div class="container hero">
             <h1 class="slogan__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ 
 ДЛЯ ВАШЕГО БИЗНЕСА </h1>
             <button  type="button" data-modal-open class="slogan__button" >Заказать услугу</button>
             </div>
-        </section> -->
+        </section> 
   
 
 
