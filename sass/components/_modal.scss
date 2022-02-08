@@ -13,11 +13,14 @@
 
 .modal {
   position: absolute;
-  width: 528px;
+  width: 450px;
   background-color: var(--sup-head-color);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @media screen and(min-width: 767px) {
+    width: 528px;
+  }
 }
 
 .modal__button {
@@ -117,11 +120,15 @@ input {
   justify-content: center;
   align-items: center;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 20px;
+  @media screen and (min-width: 767px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 .modal__policy {
   position: absolute;

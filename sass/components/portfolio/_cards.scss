@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  z-index: 1;
+
   @media screen and(min-width: 768px) {
     flex-wrap: wrap;
   }
