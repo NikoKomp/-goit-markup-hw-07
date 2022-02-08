@@ -7,8 +7,6 @@
   align-content: flex-start;
   align-items: center;
   justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 15px;
 
   @media screen and(min-width: 768px) {
     justify-content: center;
@@ -21,6 +19,7 @@
   border: none;
   background-color: transparent;
   padding: 12px 8px;
+  margin-right: 15px;
 
   @media screen and(min-width: 767px) {
     display: none;
@@ -38,7 +37,7 @@
 .mobile {
   background-color: white;
   width: 480px;
-  height: auto;
+  height: 768px;
   top: 0;
   left: 0;
   position: fixed;
@@ -148,7 +147,10 @@
 }
 .container-mobile {
   max-width: 480px;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+.mob__menu__bottom {
+  margin-top: auto;
 }
