@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,qBAAqB,AAAC,CACpB,gBAAgB,CAAE,OAAO,CAC1B",
+    "sources": [
+        "../sass/components/ice.scss"
+    ],
+    "names": [],
+    "file": "ice.min.css"
+}
